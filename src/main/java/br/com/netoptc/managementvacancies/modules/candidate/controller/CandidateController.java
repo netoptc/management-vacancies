@@ -1,6 +1,5 @@
 package br.com.netoptc.managementvacancies.modules.candidate.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,11 +10,6 @@ import br.com.netoptc.managementvacancies.modules.candidate.entity.Candidate;
 @RestController
 @RequestMapping("/candidate")
 public class CandidateController {
-
-    @GetMapping("/test")
-    public String getCandidate() {
-        return "ola";
-    }
 
     @PostMapping("/")
     public void create(@RequestBody Candidate candidate) {
