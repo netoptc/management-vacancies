@@ -1,4 +1,4 @@
-package br.com.netoptc.managementvacancies.modules.candidate.entity;
+package br.com.netoptc.managementvacancies.modules.candidate;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -16,7 +16,7 @@ import lombok.Data;
 
 @Data
 @Entity(name = "candidate")
-public class Candidate {
+public class CandidateEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
